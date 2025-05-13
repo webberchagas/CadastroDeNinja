@@ -21,6 +21,7 @@ public class MissoesController {
         return "Missão alterada com sucesso";
     }
 
+    @DeleteMapping("/deletar")
     public String deletarMissao(){
         return "Missão deletada";
     }
