@@ -2,10 +2,7 @@ package dev.java10x.CadastroDeNinja.Ninjas;
 
 import dev.java10x.CadastroDeNinja.Missoes.MissaoModel;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 
@@ -13,6 +10,7 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 @Setter
+@ToString(exclude = "missoes")
 // Entity ele transforma uma classe comum em uma entidade do BD;
 @Entity
 @Table(name = "tb_cadastro")
